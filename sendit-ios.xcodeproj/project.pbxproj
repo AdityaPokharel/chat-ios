@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03562D752A64669C5742FCB9 /* Pods_sendit_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AB90640EF823CBFB4AB1B7 /* Pods_sendit_iosTests.framework */; };
+		34E23C3C95A284203B798C05 /* Pods_sendit_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3286DB738EC8BAA683B2B86 /* Pods_sendit_ios.framework */; };
+		C7043F6B6A262CF27CAEEB3E /* Pods_sendit_ios_sendit_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3735DFA12D2C43D87BC51B /* Pods_sendit_ios_sendit_iosUITests.framework */; };
+		CF2CE49224BC736100B2EEAB /* BodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49124BC736100B2EEAB /* BodyText.swift */; };
+		CF2CE49424BC795300B2EEAB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49324BC795300B2EEAB /* PrimaryButton.swift */; };
+		CF2CE49724BC85EB00B2EEAB /* FootnoteText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */; };
+		CF54FAB824BC8BBC008FE9BE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */; };
+		CF54FABA24BC8D57008FE9BE /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAB924BC8D57008FE9BE /* LoginFlow.swift */; };
 		CFE6D93124BC46AA00C5C389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D93024BC46AA00C5C389 /* AppDelegate.swift */; };
 		CFE6D93324BC46AA00C5C389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D93224BC46AA00C5C389 /* SceneDelegate.swift */; };
 		CFE6D93524BC46AA00C5C389 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D93424BC46AA00C5C389 /* ContentView.swift */; };
@@ -15,6 +23,9 @@
 		CFE6D93D24BC46AE00C5C389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D93B24BC46AE00C5C389 /* LaunchScreen.storyboard */; };
 		CFE6D94824BC46AE00C5C389 /* sendit_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D94724BC46AE00C5C389 /* sendit_iosTests.swift */; };
 		CFE6D95324BC46AE00C5C389 /* sendit_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D95224BC46AE00C5C389 /* sendit_iosUITests.swift */; };
+		CFE6D96224BC656E00C5C389 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D96124BC656E00C5C389 /* LoginView.swift */; };
+		CFE6D96424BC65BB00C5C389 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D96324BC65BB00C5C389 /* Colors.xcassets */; };
+		CFE6D96724BC66CD00C5C389 /* Color+sendit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D96624BC66CD00C5C389 /* Color+sendit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CFE6D92D24BC46AA00C5C389 /* sendit-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sendit-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F31E75F0DB10DF1131F0E1A /* Pods-sendit-ios-sendit-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-ios-sendit-iosUITests.release.xcconfig"; path = "Target Support Files/Pods-sendit-ios-sendit-iosUITests/Pods-sendit-ios-sendit-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2106162BA4662B5CF585F9A3 /* Pods-sendit-ios-sendit-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-ios-sendit-iosUITests.debug.xcconfig"; path = "Target Support Files/Pods-sendit-ios-sendit-iosUITests/Pods-sendit-ios-sendit-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4BB86A13EF5D13F544925F91 /* Pods-sendit-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-iosTests.release.xcconfig"; path = "Target Support Files/Pods-sendit-iosTests/Pods-sendit-iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C67345D8240DA6E0D277C09 /* Pods-sendit-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-ios.debug.xcconfig"; path = "Target Support Files/Pods-sendit-ios/Pods-sendit-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		7E3735DFA12D2C43D87BC51B /* Pods_sendit_ios_sendit_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendit_ios_sendit_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6AB90640EF823CBFB4AB1B7 /* Pods_sendit_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendit_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3286DB738EC8BAA683B2B86 /* Pods_sendit_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendit_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2CE49124BC736100B2EEAB /* BodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyText.swift; sourceTree = "<group>"; };
+		CF2CE49324BC795300B2EEAB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteText.swift; sourceTree = "<group>"; };
+		CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CF54FAB924BC8D57008FE9BE /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
+		CFE6D92D24BC46AA00C5C389 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE6D93024BC46AA00C5C389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFE6D93224BC46AA00C5C389 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CFE6D93424BC46AA00C5C389 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +72,11 @@
 		CFE6D94E24BC46AE00C5C389 /* sendit-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sendit-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE6D95224BC46AE00C5C389 /* sendit_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendit_iosUITests.swift; sourceTree = "<group>"; };
 		CFE6D95424BC46AE00C5C389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFE6D96124BC656E00C5C389 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CFE6D96324BC65BB00C5C389 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CFE6D96624BC66CD00C5C389 /* Color+sendit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+sendit.swift"; sourceTree = "<group>"; };
+		E854C79078FDAB50FCE53A0D /* Pods-sendit-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-ios.release.xcconfig"; path = "Target Support Files/Pods-sendit-ios/Pods-sendit-ios.release.xcconfig"; sourceTree = "<group>"; };
+		FDB8B13AC640440A429DAE3B /* Pods-sendit-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sendit-iosTests.debug.xcconfig"; path = "Target Support Files/Pods-sendit-iosTests/Pods-sendit-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34E23C3C95A284203B798C05 /* Pods_sendit_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03562D752A64669C5742FCB9 /* Pods_sendit_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +100,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7043F6B6A262CF27CAEEB3E /* Pods_sendit_ios_sendit_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D4FAE593E14BC094A6ECF39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C3286DB738EC8BAA683B2B86 /* Pods_sendit_ios.framework */,
+				7E3735DFA12D2C43D87BC51B /* Pods_sendit_ios_sendit_iosUITests.framework */,
+				B6AB90640EF823CBFB4AB1B7 /* Pods_sendit_iosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7936CF706AA1761B8EE569E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C67345D8240DA6E0D277C09 /* Pods-sendit-ios.debug.xcconfig */,
+				E854C79078FDAB50FCE53A0D /* Pods-sendit-ios.release.xcconfig */,
+				2106162BA4662B5CF585F9A3 /* Pods-sendit-ios-sendit-iosUITests.debug.xcconfig */,
+				1F31E75F0DB10DF1131F0E1A /* Pods-sendit-ios-sendit-iosUITests.release.xcconfig */,
+				FDB8B13AC640440A429DAE3B /* Pods-sendit-iosTests.debug.xcconfig */,
+				4BB86A13EF5D13F544925F91 /* Pods-sendit-iosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF2CE49024BC733C00B2EEAB /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				CF2CE49524BC85D500B2EEAB /* Text */,
+				CF2CE49324BC795300B2EEAB /* PrimaryButton.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+		CF2CE49524BC85D500B2EEAB /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				CF2CE49124BC736100B2EEAB /* BodyText.swift */,
+				CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
 		CFE6D92424BC46A900C5C389 = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +155,15 @@
 				CFE6D94624BC46AE00C5C389 /* sendit-iosTests */,
 				CFE6D95124BC46AE00C5C389 /* sendit-iosUITests */,
 				CFE6D92E24BC46AA00C5C389 /* Products */,
+				7936CF706AA1761B8EE569E2 /* Pods */,
+				2D4FAE593E14BC094A6ECF39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		CFE6D92E24BC46AA00C5C389 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CFE6D92D24BC46AA00C5C389 /* sendit-ios.app */,
+				CFE6D92D24BC46AA00C5C389 /* chat.app */,
 				CFE6D94324BC46AE00C5C389 /* sendit-iosTests.xctest */,
 				CFE6D94E24BC46AE00C5C389 /* sendit-iosUITests.xctest */,
 			);
@@ -99,6 +173,10 @@
 		CFE6D92F24BC46AA00C5C389 /* sendit-ios */ = {
 			isa = PBXGroup;
 			children = (
+				CFE6D96324BC65BB00C5C389 /* Colors.xcassets */,
+				CF2CE49024BC733C00B2EEAB /* ReusableViews */,
+				CFE6D96524BC66B000C5C389 /* Constants */,
+				CFE6D96024BC655800C5C389 /* Login */,
 				CFE6D93024BC46AA00C5C389 /* AppDelegate.swift */,
 				CFE6D93224BC46AA00C5C389 /* SceneDelegate.swift */,
 				CFE6D93424BC46AA00C5C389 /* ContentView.swift */,
@@ -136,6 +214,24 @@
 			path = "sendit-iosUITests";
 			sourceTree = "<group>";
 		};
+		CFE6D96024BC655800C5C389 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6D96124BC656E00C5C389 /* LoginView.swift */,
+				CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */,
+				CF54FAB924BC8D57008FE9BE /* LoginFlow.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CFE6D96524BC66B000C5C389 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CFE6D96624BC66CD00C5C389 /* Color+sendit.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +239,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE6D95724BC46AE00C5C389 /* Build configuration list for PBXNativeTarget "sendit-ios" */;
 			buildPhases = (
+				E118AF2A4F5229DF0A131E62 /* [CP] Check Pods Manifest.lock */,
 				CFE6D92924BC46AA00C5C389 /* Sources */,
 				CFE6D92A24BC46AA00C5C389 /* Frameworks */,
 				CFE6D92B24BC46AA00C5C389 /* Resources */,
+				C74B08A29F879F64C6A59065 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,13 +251,14 @@
 			);
 			name = "sendit-ios";
 			productName = "sendit-ios";
-			productReference = CFE6D92D24BC46AA00C5C389 /* sendit-ios.app */;
+			productReference = CFE6D92D24BC46AA00C5C389 /* chat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CFE6D94224BC46AE00C5C389 /* sendit-iosTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE6D95A24BC46AE00C5C389 /* Build configuration list for PBXNativeTarget "sendit-iosTests" */;
 			buildPhases = (
+				C4D24AA601C66BCF32541306 /* [CP] Check Pods Manifest.lock */,
 				CFE6D93F24BC46AE00C5C389 /* Sources */,
 				CFE6D94024BC46AE00C5C389 /* Frameworks */,
 				CFE6D94124BC46AE00C5C389 /* Resources */,
@@ -178,9 +277,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFE6D95D24BC46AE00C5C389 /* Build configuration list for PBXNativeTarget "sendit-iosUITests" */;
 			buildPhases = (
+				18BAA8DA8656526F71E808F4 /* [CP] Check Pods Manifest.lock */,
 				CFE6D94A24BC46AE00C5C389 /* Sources */,
 				CFE6D94B24BC46AE00C5C389 /* Frameworks */,
 				CFE6D94C24BC46AE00C5C389 /* Resources */,
+				C82988AA6B93EE0591B365BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CFE6D93D24BC46AE00C5C389 /* LaunchScreen.storyboard in Resources */,
+				CFE6D96424BC65BB00C5C389 /* Colors.xcassets in Resources */,
 				CFE6D93A24BC46AE00C5C389 /* Preview Assets.xcassets in Resources */,
 				CFE6D93724BC46AE00C5C389 /* Assets.xcassets in Resources */,
 			);
@@ -262,13 +364,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		18BAA8DA8656526F71E808F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sendit-ios-sendit-iosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4D24AA601C66BCF32541306 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sendit-iosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C74B08A29F879F64C6A59065 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendit-ios/Pods-sendit-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendit-ios/Pods-sendit-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sendit-ios/Pods-sendit-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C82988AA6B93EE0591B365BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendit-ios-sendit-iosUITests/Pods-sendit-ios-sendit-iosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sendit-ios-sendit-iosUITests/Pods-sendit-ios-sendit-iosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sendit-ios-sendit-iosUITests/Pods-sendit-ios-sendit-iosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E118AF2A4F5229DF0A131E62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sendit-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CFE6D92924BC46AA00C5C389 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF2CE49724BC85EB00B2EEAB /* FootnoteText.swift in Sources */,
+				CF2CE49224BC736100B2EEAB /* BodyText.swift in Sources */,
 				CFE6D93124BC46AA00C5C389 /* AppDelegate.swift in Sources */,
+				CFE6D96724BC66CD00C5C389 /* Color+sendit.swift in Sources */,
 				CFE6D93324BC46AA00C5C389 /* SceneDelegate.swift in Sources */,
+				CF54FABA24BC8D57008FE9BE /* LoginFlow.swift in Sources */,
+				CF54FAB824BC8BBC008FE9BE /* LoginVC.swift in Sources */,
+				CF2CE49424BC795300B2EEAB /* PrimaryButton.swift in Sources */,
+				CFE6D96224BC656E00C5C389 /* LoginView.swift in Sources */,
 				CFE6D93524BC46AA00C5C389 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +644,7 @@
 		};
 		CFE6D95824BC46AE00C5C389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C67345D8240DA6E0D277C09 /* Pods-sendit-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,15 +656,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adityapokharel.sendit-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityapokharel.sendit;
+				PRODUCT_NAME = chat;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		CFE6D95924BC46AE00C5C389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E854C79078FDAB50FCE53A0D /* Pods-sendit-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,15 +677,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adityapokharel.sendit-ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.adityapokharel.sendit;
+				PRODUCT_NAME = chat;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		CFE6D95B24BC46AE00C5C389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB8B13AC640440A429DAE3B /* Pods-sendit-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +709,7 @@
 		};
 		CFE6D95C24BC46AE00C5C389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BB86A13EF5D13F544925F91 /* Pods-sendit-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +732,7 @@
 		};
 		CFE6D95E24BC46AE00C5C389 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2106162BA4662B5CF585F9A3 /* Pods-sendit-ios-sendit-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +753,7 @@
 		};
 		CFE6D95F24BC46AE00C5C389 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F31E75F0DB10DF1131F0E1A /* Pods-sendit-ios-sendit-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
