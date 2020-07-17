@@ -9,32 +9,27 @@
 import UIKit
 import SwiftUI
 
-class LoginVC: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+extension LoginView {
+    class LoginViewModel: ObservableObject {
+        private var firebase = AuthService()
+        @Published var email: String = ""
+        @Published var password: String = ""
+        @Published var errorMessage: String = ""
+        @Published var isLoading: Bool = false
         
-        let initialView = UIHostingController(
-            rootView: LoginView(onSignIn: .constant({ [weak self] (username: String, password: String) in
-                self?.login(username, password)
-            }))
-        )
-
-        addChild(initialView)
-        initialView.view.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(initialView.view)
-        
-        NSLayoutConstraint.activate([
-            initialView.view.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            initialView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            initialView.view.topAnchor.constraint(equalTo: view.topAnchor),
-            initialView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-        ])
-    }
-    
-    func login(_ username: String, _ password: String) {
-        print("username: \(username), password: \(password)")
+        func onSignIn(callback: @escaping (_ uid: String) -> Void) {
+            firebase.signIn(email, password, onError: { err in
+                self.errorMessage = "Error signing in. Check your details dumbass."
+                self.isLoading = false
+            }) {
+                guard let uid = AuthService().currentUser()?.uid else {
+                    self.errorMessage = "Error fetching userID. Try again later dumbass."
+                    return
+                }
+                callback(uid)
+            }
+        }
     }
 }
-
 
 

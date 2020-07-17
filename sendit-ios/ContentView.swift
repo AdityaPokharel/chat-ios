@@ -9,8 +9,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userSession: SessionModel
+
     var body: some View {
-        LoginFlow()
+        NavigationView {
+            if userSession.isLoggedIn {
+                ChatListView()
+            } else {
+                LoginView()
+            }
+        }
     }
 }
 

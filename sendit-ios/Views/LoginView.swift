@@ -9,12 +9,15 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
-    @State var errorMessage: String = ""
-    @State var isLoading: Bool = false
-    @Binding var onSignIn: ((String, String) -> Void)
-
+    @EnvironmentObject var session: SessionModel
+    @ObservedObject var viewModel = LoginViewModel()
+    
+    func login() {
+        viewModel.onSignIn { uid in
+            self.session.isLoggedIn = true
+            self.session.uid = uid
+        }
+    }
 
     var body: some View {
         ZStack {
@@ -22,7 +25,7 @@ struct LoginView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                Text("CHAT")
+                Text("LOGIN")
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.ink)
@@ -34,13 +37,13 @@ struct LoginView: View {
                         .frame(height: 40)
                         .foregroundColor(.white)
                         .shadow(color: Color(UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)), radius: 4, x: 0, y: 0)
-                    if username.isEmpty {
+                    if viewModel.email.isEmpty {
                         BodyText(text: "Username")
                             .foregroundColor(.lightGray)
                             .padding(.leading, 16)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    TextField("", text: $username)
+                    TextField("", text: $viewModel.email)
                         .frame(height: 40)
                         .padding(.leading, 20)
                         .autocapitalization(.none)
@@ -52,29 +55,31 @@ struct LoginView: View {
                         .frame(height: 40)
                         .foregroundColor(.white)
                         .shadow(color: Color(UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)), radius: 4, x: 0, y: 0)
-                    if password.isEmpty {
+                    if viewModel.password.isEmpty {
                         BodyText(text: "Password")
                             .foregroundColor(.lightGray)
                             .padding(.leading, 16)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    TextField("", text: $password)
+                    SecureField("", text: $viewModel.password)
                         .frame(height: 40)
                         .padding(.leading, 20)
                         .autocapitalization(.none)
                         .disableAutocorrection(true)
                 }
                 .padding(.bottom, 40)
-                PrimaryButton(label: self.isLoading ? "Hold on..." : "Login") {
-                    if !self.isLoading {
-                        self.onSignIn(self.username, self.password)
+                PrimaryButton(label: self.viewModel.isLoading ? "Hold on..." : "Login") {
+                    if !self.viewModel.isLoading {
+                        self.login()
                     }
-                    self.isLoading = true
+                    self.viewModel.isLoading = true
                 }.frame(maxWidth: 235)
-                if !errorMessage.isEmpty {
-                    BodyText(text: errorMessage)
+
+                if !viewModel.errorMessage.isEmpty {
+                    BodyText(text: viewModel.errorMessage)
                         .padding(.top, 16)
                         .foregroundColor(.errorRed)
+                        .multilineTextAlignment(.center)
                 }
 
                 Spacer()
@@ -91,8 +96,6 @@ struct LoginView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(onSignIn: .constant({ (username: String, password: String) in
-            print("Username: \(username), password: \(password)")
-        }))
+        LoginView()
     }
 }

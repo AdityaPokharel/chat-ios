@@ -8,6 +8,7 @@ target 'sendit-ios' do
   # Pods for sendit-ios
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
 
 
   target 'sendit-iosTests' do
