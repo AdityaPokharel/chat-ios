@@ -11,13 +11,6 @@ import SwiftUI
 struct LoginView: View {
     @EnvironmentObject var session: SessionModel
     @ObservedObject var viewModel = LoginViewModel()
-    
-    func login() {
-        viewModel.onSignIn { uid in
-            self.session.isLoggedIn = true
-            self.session.uid = uid
-        }
-    }
 
     var body: some View {
         ZStack {
@@ -25,12 +18,12 @@ struct LoginView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
-                Text("LOGIN")
+                Text(LoginViewConstants.title)
                     .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.ink)
                     .padding(.bottom, 16)
-                BodyText(text: "Login to continue")
+                BodyText(text: LoginViewConstants.subtitle)
                     .padding(.bottom, 40)
                 ZStack {
                     RoundedRectangle(cornerRadius: 40)
@@ -38,7 +31,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .shadow(color: Color(UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)), radius: 4, x: 0, y: 0)
                     if viewModel.email.isEmpty {
-                        BodyText(text: "Username")
+                        BodyText(text: LoginViewConstants.usernamePlaceholder)
                             .foregroundColor(.lightGray)
                             .padding(.leading, 16)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -56,7 +49,7 @@ struct LoginView: View {
                         .foregroundColor(.white)
                         .shadow(color: Color(UIColor(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.3)), radius: 4, x: 0, y: 0)
                     if viewModel.password.isEmpty {
-                        BodyText(text: "Password")
+                        BodyText(text: LoginViewConstants.passwordPlaceholder)
                             .foregroundColor(.lightGray)
                             .padding(.leading, 16)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -68,9 +61,9 @@ struct LoginView: View {
                         .disableAutocorrection(true)
                 }
                 .padding(.bottom, 40)
-                PrimaryButton(label: self.viewModel.isLoading ? "Hold on..." : "Login") {
+                PrimaryButton(label: self.viewModel.isLoading ? LoginViewConstants.buttonLoadingLabel : LoginViewConstants.buttonLabel) {
                     if !self.viewModel.isLoading {
-                        self.login()
+                        self.viewModel.onSignIn(session: self.session)
                     }
                     self.viewModel.isLoading = true
                 }.frame(maxWidth: 235)
@@ -83,8 +76,7 @@ struct LoginView: View {
                 }
 
                 Spacer()
-
-                FootnoteText(text: "We only allow signing up through referrals. If you have received a referral, please visit the referral link to complete your sign-up process.")
+                FootnoteText(text: LoginViewConstants.footnoteText)
                     .multilineTextAlignment(.center)
                     .foregroundColor(.ink)
                 Spacer()

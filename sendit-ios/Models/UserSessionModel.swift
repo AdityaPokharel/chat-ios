@@ -10,5 +10,5 @@ import Foundation
 
 class SessionModel: ObservableObject {
     @Published var isLoggedIn: Bool = false
-    @Published var uid: String?
+    static var uid: String = ""
 }

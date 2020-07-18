@@ -23,21 +23,21 @@ struct ChatListView: View {
                     Text(item)
                         .padding(.vertical, 50)
                     }
-                .navigationBarTitle("Your Chats")
+                .navigationBarTitle(Constants.navigationTitle)
             }
         }
     }
 }
 
+// VM
 extension ChatListView {
     class ChatListViewModel: ObservableObject {
-        @Published var user: ChatUser?
-        @Published var chatList: [ChatRow] = []
         @Published var error: String?
+        @Published var user: ChatUser?
 
         init(_ userService: UserService) {
             guard let user = AuthService().currentUser() else {
-                self.error = "CHAT Error fetching current user."
+                self.error = Constants.errorMessageFetch
                 return
             }
             let uid = user.uid
@@ -45,6 +45,14 @@ extension ChatListView {
                 self.user = user
             }
         }
+    }
+}
+
+// Constants
+extension ChatListView {
+    enum Constants {
+        static let errorMessageFetch = "CHAT Error decoding current user."
+        static let navigationTitle = "Your Chats"
     }
 }
 

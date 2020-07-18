@@ -17,7 +17,7 @@ extension LoginView {
         @Published var errorMessage: String = ""
         @Published var isLoading: Bool = false
         
-        func onSignIn(callback: @escaping (_ uid: String) -> Void) {
+        func onSignIn(session: SessionModel) {
             firebase.signIn(email, password, onError: { err in
                 self.errorMessage = "Error signing in. Check your details dumbass."
                 self.isLoading = false
@@ -26,7 +26,8 @@ extension LoginView {
                     self.errorMessage = "Error fetching userID. Try again later dumbass."
                     return
                 }
-                callback(uid)
+                session.isLoggedIn = true
+                SessionModel.uid = uid
             }
         }
     }

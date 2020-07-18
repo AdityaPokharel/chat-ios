@@ -37,7 +37,6 @@ class AuthService {
             callback()
         }
     }
-    
 
 //    func signUp (_ email: String, _ password: String, callback: () -> Void) throws {
 //        Auth.auth().createUser(withEmail: email, password: password) { (result, err) throws in

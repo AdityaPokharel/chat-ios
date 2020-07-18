@@ -8,14 +8,6 @@
 
 import FirebaseFirestore
 
-struct ChatUser {
-    var uid: String
-    var firstName: String
-    var lastName: String
-    var image: String
-    var chats: [String]
-}
-
 class UserService {
     func fetchUserData(uid: String, callback: @escaping (ChatUser) -> Void) {
         let db = Firestore.firestore()
