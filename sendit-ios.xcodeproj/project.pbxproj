@@ -11,12 +11,14 @@
 		34E23C3C95A284203B798C05 /* Pods_sendit_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3286DB738EC8BAA683B2B86 /* Pods_sendit_ios.framework */; };
 		C7043F6B6A262CF27CAEEB3E /* Pods_sendit_ios_sendit_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E3735DFA12D2C43D87BC51B /* Pods_sendit_ios_sendit_iosUITests.framework */; };
 		CF02CDE624C27DD10042F9EF /* LoginViewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CDE524C27DD10042F9EF /* LoginViewConstants.swift */; };
+		CF02CDE824C287D70042F9EF /* ChatListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CDE724C287D70042F9EF /* ChatListVM.swift */; };
+		CF02CDEA24C288040042F9EF /* ChatListConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF02CDE924C288040042F9EF /* ChatListConstants.swift */; };
 		CF1175B824C1AE7E001CFB98 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CF1175B724C1AE7E001CFB98 /* GoogleService-Info.plist */; };
 		CF1175BA24C1BE47001CFB98 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1175B924C1BE47001CFB98 /* UserService.swift */; };
 		CF2CE49224BC736100B2EEAB /* BodyText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49124BC736100B2EEAB /* BodyText.swift */; };
 		CF2CE49424BC795300B2EEAB /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49324BC795300B2EEAB /* PrimaryButton.swift */; };
 		CF2CE49724BC85EB00B2EEAB /* FootnoteText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */; };
-		CF54FAB824BC8BBC008FE9BE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */; };
+		CF54FAB824BC8BBC008FE9BE /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAB724BC8BBC008FE9BE /* LoginVM.swift */; };
 		CF54FABD24BC969A008FE9BE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FABC24BC969A008FE9BE /* AuthService.swift */; };
 		CF7B846C24BDB90300A3F429 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B846B24BDB90300A3F429 /* ChatListView.swift */; };
 		CF7B847024BDC19C00A3F429 /* UserSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B846F24BDC19C00A3F429 /* UserSessionModel.swift */; };
@@ -61,12 +63,14 @@
 		B6AB90640EF823CBFB4AB1B7 /* Pods_sendit_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendit_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3286DB738EC8BAA683B2B86 /* Pods_sendit_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sendit_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF02CDE524C27DD10042F9EF /* LoginViewConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewConstants.swift; sourceTree = "<group>"; };
+		CF02CDE724C287D70042F9EF /* ChatListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListVM.swift; sourceTree = "<group>"; };
+		CF02CDE924C288040042F9EF /* ChatListConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListConstants.swift; sourceTree = "<group>"; };
 		CF1175B724C1AE7E001CFB98 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF1175B924C1BE47001CFB98 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		CF2CE49124BC736100B2EEAB /* BodyText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyText.swift; sourceTree = "<group>"; };
 		CF2CE49324BC795300B2EEAB /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteText.swift; sourceTree = "<group>"; };
-		CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		CF54FAB724BC8BBC008FE9BE /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		CF54FABC24BC969A008FE9BE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CF7B846B24BDB90300A3F429 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		CF7B846F24BDC19C00A3F429 /* UserSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionModel.swift; sourceTree = "<group>"; };
@@ -148,6 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				CF7B846B24BDB90300A3F429 /* ChatListView.swift */,
+				CF02CDE724C287D70042F9EF /* ChatListVM.swift */,
+				CF02CDE924C288040042F9EF /* ChatListConstants.swift */,
 			);
 			path = ChatList;
 			sourceTree = "<group>";
@@ -263,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				CFE6D96124BC656E00C5C389 /* LoginView.swift */,
-				CF54FAB724BC8BBC008FE9BE /* LoginVC.swift */,
+				CF54FAB724BC8BBC008FE9BE /* LoginVM.swift */,
 				CF02CDE524C27DD10042F9EF /* LoginViewConstants.swift */,
 			);
 			path = Login;
@@ -528,11 +534,13 @@
 				CFE6D96724BC66CD00C5C389 /* Color+sendit.swift in Sources */,
 				CF7B847024BDC19C00A3F429 /* UserSessionModel.swift in Sources */,
 				CFE6D93324BC46AA00C5C389 /* SceneDelegate.swift in Sources */,
-				CF54FAB824BC8BBC008FE9BE /* LoginVC.swift in Sources */,
+				CF54FAB824BC8BBC008FE9BE /* LoginVM.swift in Sources */,
+				CF02CDEA24C288040042F9EF /* ChatListConstants.swift in Sources */,
 				CF7B846C24BDB90300A3F429 /* ChatListView.swift in Sources */,
 				CF1175BA24C1BE47001CFB98 /* UserService.swift in Sources */,
 				CF2CE49424BC795300B2EEAB /* PrimaryButton.swift in Sources */,
 				CFE6D96224BC656E00C5C389 /* LoginView.swift in Sources */,
+				CF02CDE824C287D70042F9EF /* ChatListVM.swift in Sources */,
 				CFE6D93524BC46AA00C5C389 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
