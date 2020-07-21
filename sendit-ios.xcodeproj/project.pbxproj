@@ -20,9 +20,10 @@
 		CF2CE49724BC85EB00B2EEAB /* FootnoteText.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */; };
 		CF54FAB824BC8BBC008FE9BE /* LoginVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FAB724BC8BBC008FE9BE /* LoginVM.swift */; };
 		CF54FABD24BC969A008FE9BE /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF54FABC24BC969A008FE9BE /* AuthService.swift */; };
+		CF793E8624C3166200F70899 /* SimpleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF793E8524C3166200F70899 /* SimpleUser.swift */; };
 		CF7B846C24BDB90300A3F429 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B846B24BDB90300A3F429 /* ChatListView.swift */; };
 		CF7B847024BDC19C00A3F429 /* UserSessionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7B846F24BDC19C00A3F429 /* UserSessionModel.swift */; };
-		CF924CD124BFBF0900E609CD /* ChatUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF924CD024BFBF0900E609CD /* ChatUser.swift */; };
+		CF924CD124BFBF0900E609CD /* DetailedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF924CD024BFBF0900E609CD /* DetailedUser.swift */; };
 		CF924CD324BFBF2300E609CD /* ChatModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF924CD224BFBF2300E609CD /* ChatModels.swift */; };
 		CFE6D93124BC46AA00C5C389 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D93024BC46AA00C5C389 /* AppDelegate.swift */; };
 		CFE6D93324BC46AA00C5C389 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D93224BC46AA00C5C389 /* SceneDelegate.swift */; };
@@ -30,8 +31,6 @@
 		CFE6D93724BC46AE00C5C389 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D93624BC46AE00C5C389 /* Assets.xcassets */; };
 		CFE6D93A24BC46AE00C5C389 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D93924BC46AE00C5C389 /* Preview Assets.xcassets */; };
 		CFE6D93D24BC46AE00C5C389 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D93B24BC46AE00C5C389 /* LaunchScreen.storyboard */; };
-		CFE6D94824BC46AE00C5C389 /* sendit_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D94724BC46AE00C5C389 /* sendit_iosTests.swift */; };
-		CFE6D95324BC46AE00C5C389 /* sendit_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D95224BC46AE00C5C389 /* sendit_iosUITests.swift */; };
 		CFE6D96224BC656E00C5C389 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D96124BC656E00C5C389 /* LoginView.swift */; };
 		CFE6D96424BC65BB00C5C389 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFE6D96324BC65BB00C5C389 /* Colors.xcassets */; };
 		CFE6D96724BC66CD00C5C389 /* Color+sendit.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE6D96624BC66CD00C5C389 /* Color+sendit.swift */; };
@@ -72,9 +71,11 @@
 		CF2CE49624BC85EB00B2EEAB /* FootnoteText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootnoteText.swift; sourceTree = "<group>"; };
 		CF54FAB724BC8BBC008FE9BE /* LoginVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVM.swift; sourceTree = "<group>"; };
 		CF54FABC24BC969A008FE9BE /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		CF793E8224C29CD500F70899 /* sendit-iosTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sendit-iosTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		CF793E8524C3166200F70899 /* SimpleUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleUser.swift; sourceTree = "<group>"; };
 		CF7B846B24BDB90300A3F429 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		CF7B846F24BDC19C00A3F429 /* UserSessionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionModel.swift; sourceTree = "<group>"; };
-		CF924CD024BFBF0900E609CD /* ChatUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUser.swift; sourceTree = "<group>"; };
+		CF924CD024BFBF0900E609CD /* DetailedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedUser.swift; sourceTree = "<group>"; };
 		CF924CD224BFBF2300E609CD /* ChatModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModels.swift; sourceTree = "<group>"; };
 		CFE6D92D24BC46AA00C5C389 /* chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFE6D93024BC46AA00C5C389 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,11 +86,7 @@
 		CFE6D93C24BC46AE00C5C389 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFE6D93E24BC46AE00C5C389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE6D94324BC46AE00C5C389 /* sendit-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sendit-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFE6D94724BC46AE00C5C389 /* sendit_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendit_iosTests.swift; sourceTree = "<group>"; };
-		CFE6D94924BC46AE00C5C389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE6D94E24BC46AE00C5C389 /* sendit-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sendit-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFE6D95224BC46AE00C5C389 /* sendit_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sendit_iosUITests.swift; sourceTree = "<group>"; };
-		CFE6D95424BC46AE00C5C389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFE6D96124BC656E00C5C389 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CFE6D96324BC65BB00C5C389 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		CFE6D96624BC66CD00C5C389 /* Color+sendit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+sendit.swift"; sourceTree = "<group>"; };
@@ -189,8 +186,9 @@
 			isa = PBXGroup;
 			children = (
 				CF7B846F24BDC19C00A3F429 /* UserSessionModel.swift */,
-				CF924CD024BFBF0900E609CD /* ChatUser.swift */,
+				CF924CD024BFBF0900E609CD /* DetailedUser.swift */,
 				CF924CD224BFBF2300E609CD /* ChatModels.swift */,
+				CF793E8524C3166200F70899 /* SimpleUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,11 +197,10 @@
 			isa = PBXGroup;
 			children = (
 				CFE6D92F24BC46AA00C5C389 /* sendit-ios */,
-				CFE6D94624BC46AE00C5C389 /* sendit-iosTests */,
-				CFE6D95124BC46AE00C5C389 /* sendit-iosUITests */,
 				CFE6D92E24BC46AA00C5C389 /* Products */,
 				7936CF706AA1761B8EE569E2 /* Pods */,
 				2D4FAE593E14BC094A6ECF39 /* Frameworks */,
+				CF793E8224C29CD500F70899 /* sendit-iosTests-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,24 +242,6 @@
 				CFE6D93924BC46AE00C5C389 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		CFE6D94624BC46AE00C5C389 /* sendit-iosTests */ = {
-			isa = PBXGroup;
-			children = (
-				CFE6D94724BC46AE00C5C389 /* sendit_iosTests.swift */,
-				CFE6D94924BC46AE00C5C389 /* Info.plist */,
-			);
-			path = "sendit-iosTests";
-			sourceTree = "<group>";
-		};
-		CFE6D95124BC46AE00C5C389 /* sendit-iosUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CFE6D95224BC46AE00C5C389 /* sendit_iosUITests.swift */,
-				CFE6D95424BC46AE00C5C389 /* Info.plist */,
-			);
-			path = "sendit-iosUITests";
 			sourceTree = "<group>";
 		};
 		CFE6D96024BC655800C5C389 /* Login */ = {
@@ -359,6 +338,7 @@
 					};
 					CFE6D94224BC46AE00C5C389 = {
 						CreatedOnToolsVersion = 11.5;
+						LastSwiftMigration = 1160;
 						TestTargetID = CFE6D92C24BC46AA00C5C389;
 					};
 					CFE6D94D24BC46AE00C5C389 = {
@@ -524,7 +504,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CF924CD124BFBF0900E609CD /* ChatUser.swift in Sources */,
+				CF924CD124BFBF0900E609CD /* DetailedUser.swift in Sources */,
+				CF793E8624C3166200F70899 /* SimpleUser.swift in Sources */,
 				CF2CE49724BC85EB00B2EEAB /* FootnoteText.swift in Sources */,
 				CF54FABD24BC969A008FE9BE /* AuthService.swift in Sources */,
 				CF924CD324BFBF2300E609CD /* ChatModels.swift in Sources */,
@@ -549,7 +530,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE6D94824BC46AE00C5C389 /* sendit_iosTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +537,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFE6D95324BC46AE00C5C389 /* sendit_iosUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -750,6 +729,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H45848HNRV;
 				INFOPLIST_FILE = "sendit-iosTests/Info.plist";
@@ -761,6 +741,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adityapokharel.sendit-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sendit-iosTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sendit-ios.app/sendit-ios";
@@ -773,6 +755,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H45848HNRV;
 				INFOPLIST_FILE = "sendit-iosTests/Info.plist";
@@ -784,6 +767,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.adityapokharel.sendit-iosTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "sendit-iosTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sendit-ios.app/sendit-ios";

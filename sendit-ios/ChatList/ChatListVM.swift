@@ -11,14 +11,14 @@ import SwiftUI
 extension ChatListView {
     class ChatListViewModel: ObservableObject {
         @Published var error: String?
-        @Published var user: ChatUser?
+        @Published var user: DetailedUser?
 
-        init(_ userService: UserService) {
-            guard let user = AuthService().currentUser() else {
+        init() {
+            guard let currentUser = AuthService().currentUser() else {
                 self.error = Constants.errorMessageFetch
                 return
             }
-            let uid = user.uid
+            let uid = currentUser.uid
             UserService().fetchUserData(uid: uid) { user in
                 self.user = user
             }

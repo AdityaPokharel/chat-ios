@@ -8,13 +8,14 @@
 import Foundation
 
 struct ChatBubble {
-    var timestamp: Date
+    var sender: String
     var text: String
+    var time: Date
 }
 
-struct ChatRow {
+struct ChatInstance {
     var id: String
     var seen: Bool
-    var sender: ChatUser
+    var sender: DetailedUser
     var texts: [ChatBubble]
 }

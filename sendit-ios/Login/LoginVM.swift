@@ -11,18 +11,18 @@ import SwiftUI
 
 extension LoginView {
     class LoginViewModel: ObservableObject {
-        private var firebase = AuthService()
+        private var auth = AuthService()
         @Published var email: String = ""
         @Published var password: String = ""
         @Published var errorMessage: String = ""
         @Published var isLoading: Bool = false
         
         func onSignIn(session: SessionModel) {
-            firebase.signIn(email, password, onError: { err in
+            auth.signIn(email, password, onError: { err in
                 self.errorMessage = "Error signing in. Check your details dumbass."
                 self.isLoading = false
             }) {
-                guard let uid = AuthService().currentUser()?.uid else {
+                guard let uid = self.auth.currentUser()?.uid else {
                     self.errorMessage = "Error fetching userID. Try again later dumbass."
                     return
                 }

@@ -9,7 +9,7 @@
 import SwiftUI
 
 struct ChatListView: View {
-    @ObservedObject var viewModel = ChatListViewModel(UserService())
+    @ObservedObject var viewModel = ChatListViewModel()
     @EnvironmentObject var userSession: SessionModel
 
     init() {
@@ -19,8 +19,8 @@ struct ChatListView: View {
     var body: some View {
         VStack {
             if viewModel.user != nil {
-                List(viewModel.user!.chats, id: \.self) { item in
-                    Text(item)
+                List(viewModel.user!.chats, id: \.time) { item in
+                    Text(item.text)
                         .padding(.vertical, 50)
                     }
                 .navigationBarTitle(Constants.navigationTitle)

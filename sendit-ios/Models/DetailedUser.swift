@@ -6,10 +6,14 @@
 //  Copyright © 2020 Aditya Pokharel. All rights reserved.
 //
 
-struct ChatUser {
+struct DetailedUser: Equatable {
+    static func == (lhs: DetailedUser, rhs: DetailedUser) -> Bool {
+        return lhs.uid == rhs.uid
+    }
+    
     var uid: String
     var firstName: String
     var lastName: String
     var image: String
-    var chats: [String]
+    var chats: [ChatBubble]
 }
